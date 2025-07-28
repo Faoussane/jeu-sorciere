@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Jeu de la Sorcière ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Écran d'accueil -->
+  <div id="welcomeScreen" class="welcome-screen">
+    <h1>🧙‍♀️ Le Grimoire des Nombres Maudits</h1>
+    <button onclick="startGame()">Toucher le cristal pour commencer</button>
+  </div>
+
+  <!-- Jeu (masqué au départ) -->
+  <div id="gameScreen" class="hidden">
+    <img src="groupe-personnages-sorciers-dessins-animes-balai-pot-ai-generatif_974575-6192.jpg" alt="Sorcière" class="Image">
+    <h1>SAUREZ-VOUS BRISER LE SORT ?</h1>
+
+    <div class="game">
+      <p>Choisissez un nombre entre 0 et 10 :</p>
+      <input type="number" id="guessInput" min="0" max="10">
+      <br>
+      <button onclick="checkGuess()">Lancer l'incantation</button>
+      <p id="message"></p>
+      <p id="compteur"></p>
+      <p id="solution"></p>
+      <button id="restartBtn" onclick="restartGame()">Nouvelle tentative</button>
+    </div>
+
+    <!-- Vidéos -->
+    <video id="winVideo" class="hidden-video" controls>
+      <source src="vict.mp4" type="video/mp4">
+    </video>
+    <video id="loseVideo" class="hidden-video" controls>
+      <source src="Mortal Kombat 1 - All Fatalities Season 5 Update (4K 60FPS)_1_2.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Sons -->
+  <audio id="soundCorrect" src="crow-caw-halloween-sound-effect-322990.mp3"></audio>
+  <audio id="soundWrong" src="sfx-punch2.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

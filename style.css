@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+body {
+  font-family: 'Henny Penny', cursive;
+  background: radial-gradient(ellipse at center, #0a0025 0%, #000000 100%);
+  color: #b19cd9;
+  text-align: center;
+  padding: 2rem;
+}
+
+.Image {
+  width: 180px;
+  filter: drop-shadow(0 0 15px #b19cd9);
+  margin-bottom: 1rem;
+  border-radius: 150px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #e6a8d7;
+  text-shadow: 0 0 20px #b19cd9, 0 0 40px #e6a8d7;
+  margin-bottom: 1rem;
+}
+
+.game {
+  background-color: rgba(10, 0, 30, 0.8);
+  padding: 2rem;
+  border: 2px solid #b19cd9;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 0 25px #b19cd9;
+}
+
+input[type="number"] {
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  background-color: #1a0033;
+  color: #e6a8d7;
+  border: 1px solid #b19cd9;
+  border-radius: 5px;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6a8d7;
+  transform: scale(1.05);
+}
+
+#message {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #ffccff;
+  text-shadow: 0 0 10px black;
+}
+
+#compteur {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #d8bfd8;
+}
+
+#solution {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  color: #ffcc00;
+  font-style: italic;
+}
+
+#restartBtn {
+  display: none;
+  margin-top: 1rem;
+  background-color: #e6a8d7;
+}
+/* Ajoutez ces règles à votre fichier CSS existant */
+
+.welcome-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, #0a0025 0%, #000000 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: #e6a8d7;
+  font-family: 'Henny Penny', cursive;
+}
+
+.welcome-screen h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 20px #b19cd9;
+  margin-bottom: 2rem;
+}
+
+.welcome-screen button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #6a0dad;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.welcome-screen button:hover {
+  background-color: #e6a8d7;
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Style pour la vidéo */
+video {
+  margin-top: 2rem;
+  max-width: 500px;
+  border: 3px solid #b19cd9;
+  border-radius: 10px;
+}
+/* Ajoutez ces règles */
+
+.welcome-screen {
+  /* ... (gardez le même style que précédemment) ... */
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hidden-video {
+  display: none;
+  margin: 2rem auto;
+  max-width: 500px;
+  border: 3px solid #b19cd9;
+  border-radius: 10px;
+}
+
+/* Animation pour les échecs */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
