@@ -131,17 +131,9 @@ button:hover {
   display: none !important;
 }
 
-/* Style pour la vidéo */
-video {
-  margin-top: 2rem;
-  max-width: 500px;
-  border: 3px solid #b19cd9;
-  border-radius: 10px;
-}
-/* Ajoutez ces règles */
 
 .welcome-screen {
-  /* ... (gardez le même style que précédemment) ... */
+  
 }
 
 .hidden {
@@ -165,4 +157,24 @@ video {
 
 .shake {
   animation: shake 0.5s;
+}
+#score {
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.effect {
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #e6a8d7, 0 0 30px #b19cd9;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff99ff, 0 0 40px #cc66ff;
+  }
 }
